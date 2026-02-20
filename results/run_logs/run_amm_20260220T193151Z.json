@@ -1,0 +1,12 @@
+[
+  {
+    "module": "AMM",
+    "input_file": "properties/AMM.lean",
+    "output_file": "/Users/Aritra.Ghosh/Desktop/personal/automated_smart_contract_verification/results/AMM_proved.lean",
+    "status": "COMPLETE",
+    "project_id": null,
+    "duration_seconds": 1130.4,
+    "error": null,
+    "submitted_at": "2026-02-20T19:13:01.525118+00:00"
+  }
+]
