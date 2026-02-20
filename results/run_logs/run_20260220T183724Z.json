@@ -1,0 +1,32 @@
+[
+  {
+    "module": "Transfer",
+    "input_file": "properties/Transfer.lean",
+    "output_file": "/Users/Aritra.Ghosh/Desktop/personal/automated_smart_contract_verification/results/Transfer_proved.lean",
+    "status": "COMPLETE",
+    "project_id": null,
+    "duration_seconds": 584.3,
+    "error": null,
+    "submitted_at": "2026-02-20T17:55:25.459902+00:00"
+  },
+  {
+    "module": "Approve",
+    "input_file": "properties/Approve.lean",
+    "output_file": "/Users/Aritra.Ghosh/Desktop/personal/automated_smart_contract_verification/results/Approve_proved.lean",
+    "status": "COMPLETE",
+    "project_id": null,
+    "duration_seconds": 582.3,
+    "error": null,
+    "submitted_at": "2026-02-20T18:05:14.740665+00:00"
+  },
+  {
+    "module": "TransferFrom",
+    "input_file": "properties/TransferFrom.lean",
+    "output_file": "/Users/Aritra.Ghosh/Desktop/personal/automated_smart_contract_verification/results/TransferFrom_proved.lean",
+    "status": "COMPLETE",
+    "project_id": null,
+    "duration_seconds": 1342.5,
+    "error": null,
+    "submitted_at": "2026-02-20T18:15:02.012924+00:00"
+  }
+]
