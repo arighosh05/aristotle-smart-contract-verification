@@ -14,7 +14,7 @@ every AMM on ethereum depends on the constant product invariant: after a swap, `
 
 a separate line of work [extracts solidity's yul IR to lean 4](https://www.nethermind.io/blog/clear-prove-anything-about-your-solidity-smart-contracts) for interactive theorem proving. this gives full mathematical expressiveness but requires human experts to write every proof manually.
 
-aristotle's [VERINA benchmark results](https://harmonic.fun/news)—96.8% success on [189 code verification tasks](https://arxiv.org/abs/2505.23135) in lean—suggested a third path: automated proof generation with full expressiveness. the question was whether that capability extends from functional programs to state machine verification. i wanted to find out.
+aristotle's [VERINA benchmark results](https://harmonic.fun/news)—96.8% success on [189 code verification tasks](https://arxiv.org/abs/2505.23135) in lean—suggested a third path: automated proof generation with full expressiveness. the question was whether that capability extends from functional programs to state machine verification. that's precisely what i wanted to find out.
 
 ---
 
