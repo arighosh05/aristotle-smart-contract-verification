@@ -82,7 +82,7 @@ the models do not capture gas accounting, storage layout, ABI encoding, reentran
 
 ---
 
-## repo structure
+## key files
 
 ```
 evm_model/
@@ -103,8 +103,7 @@ results/
   AMM_proved.lean
   run_logs/               API responses and metadata
 
-FINDINGS.md               full technical analysis
-lakefile.lean             lean 4 project configuration
+ANALYSIS.md               full technical analysis
 ```
 
 `properties/` is what was submitted (theorems with `sorry`). `results/` is what aristotle returned (proofs filled). diff them to see what the prover generated.
