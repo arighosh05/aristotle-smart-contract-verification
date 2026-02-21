@@ -2,7 +2,7 @@
 
 formal verification of ERC-20 tokens and AMM swap invariants using [aristotle](https://harmonic.fun)'s theorem prover. 29 theorems submitted, 28 proved, 1 correctly falsified with a counterexample.
 
-the headline result: aristotle proved the constant product invariant for a uniswap v2-style swap—a property class that SMT-based verifiers structurally cannot handle. nonlinear integer arithmetic is [undecidable](https://en.wikipedia.org/wiki/Hilbert%27s_tenth_problem) for SMT solvers; they either time out or fall back to bounded reasoning, which isn't a proof.
+the headline result: aristotle proved the constant product invariant for a uniswap v2-style swap—a property class that SMT-based verifiers require [lossy overapproximations](https://arxiv.org/pdf/2402.10174) to attempt. nonlinear integer arithmetic is [undecidable](https://en.wikipedia.org/wiki/Hilbert%27s_tenth_problem) for SMT solvers; they either time out or fall back to bounded reasoning, which isn't a proof. 
 
 ---
 
@@ -131,6 +131,7 @@ see [ANALYSIS.md](ANALYSIS.md) for the full analysis: proof tactics, comparisons
 **built with:** lean 4 · aristotle 0.7.0 · mathlib f897ebcf
 
 **references:**
+- [overapproximation of non-linear integer arithmetic for smart contract verification](https://arxiv.org/pdf/2402.10174) — documents the lossy approximations SMT-based tools use to work around nonlinear arithmetic; the exact limitation aristotle sidesteps
 - [VERINA: benchmarking verifiable code generation](https://arxiv.org/abs/2505.23135) — the benchmark aristotle [scored 96.8% on](https://harmonic.fun/news)
 - [uniswap v2 protocol overview](https://docs.uniswap.org/contracts/v2/concepts/protocol-overview/how-uniswap-works) — the swap model this project verifies
 - [matiyasevich's theorem](https://en.wikipedia.org/wiki/Matiyasevich%27s_theorem) — why nonlinear integer arithmetic is undecidable for SMT; resolving [Hilbert's 10th problem](https://en.wikipedia.org/wiki/Hilbert%27s_tenth_problem) negatively
